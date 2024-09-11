@@ -107,5 +107,46 @@ File `.xls` harus memiliki struktur tabel HTML dengan `id="tblExport"`. Contoh d
   </tr>
 </table>
 ```
+### Contoh Output JSON
+Setelah menjalankan program, data dari file .xls akan dikonversi ke format JSON dan disimpan dalam file combined_data.json. Berikut adalah contoh struktur file JSON yang dihasilkan:
+
+```json
+[
+    {
+        "No.": "1",
+        "Guest Name": "John Doe",
+        "ID Number": "KTP(1234567890123456)",
+        "Gender": "Male",
+        "Place, Date Of Birth": "Jakarta, 1 January 1990",
+        "Email": "johndoe@example.com",
+        "No.Handphone": "08123456789",
+        "No.Telp": "0211234567",
+        "Guest Type": "Regular"
+    },
+    {
+        "No.": "2",
+        "Guest Name": "Jane Smith",
+        "ID Number": "KTP(6543210987654321)",
+        "Gender": "Female",
+        "Place, Date Of Birth": "Bandung, 15 March 1992",
+        "Email": "janesmith@example.com",
+        "No.Handphone": "08234567890",
+        "No.Telp": "0223456789",
+        "Guest Type": "Regular"
+    },
+    {
+        "No.": "3",
+        "Guest Name": "Alice Johnson",
+        "ID Number": "KTP(1122334455667788)",
+        "Gender": "Female",
+        "Place, Date Of Birth": "Surabaya, 25 December 1985",
+        "Email": "alicejohnson@example.com",
+        "No.Handphone": "08345678901",
+        "No.Telp": "0234567890",
+        "Guest Type": "VIP"
+    }
+]
+
+```
 ### Penggunaan:
 Jalankan program ini di lingkungan Python (seperti Termux). Jika modul yang diperlukan belum diinstal, program akan secara otomatis menanganinya. Data dari file `.xls` akan di-gabungkan menjadi satu file JSON yang dapat digunakan untuk kebutuhan lain.
