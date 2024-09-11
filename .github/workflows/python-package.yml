@@ -1,0 +1,52 @@
+name: Python Package
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+      
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+      
+    - name: Run the converter
+      run: |
+        python app.py
+
+    - name: Check JSON output
+      run: |
+        if [ ! -f combined_data.json ]; then
+          echo "File combined_data.json does not exist!"
+          exit 1
+        fi
+        echo "JSON output file exists."
+      
+    - name: Test JSON validity
+      run: |
+        python -c "
+import json
+try:
+    with open('combined_data.json', 'r') as f:
+        data = json.load(f)
+    print('JSON is valid.')
+except json.JSONDecodeError as e:
+    print('Invalid JSON:', e)
+    exit(1)
+"
