@@ -51,5 +51,61 @@ Program ini dirancang untuk membaca file .xls yang berisi tabel HTML, mengekstra
 - File output `combined_data.json` akan ditimpa setiap kali program dijalankan. Pastikan untuk membackup data lama jika diperlukan.
 - Jika terjadi error selama pembacaan file `.xls`, program akan mencetak pesan kesalahan namun tetap melanjutkan proses file lainnya.
 
+## Struktur Data
+
+File `.xls` harus memiliki struktur tabel HTML dengan `id="tblExport"`. Contoh data `.xls` dapat dilihat di bawah ini:
+
+### Contoh Data `.xls`
+
+**File `data_example.xls`:**
+
+```html
+<table id="tblExport">
+  <tr>
+    <th>No.</th>
+    <th>Guest Name</th>
+    <th>ID Number</th>
+    <th>Gender</th>
+    <th>Place, Date Of Birth</th>
+    <th>Email</th>
+    <th>No.Handphone</th>
+    <th>No.Telp</th>
+    <th>Guest Type</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>John Doe</td>
+    <td>KTP(1234567890123456)</td>
+    <td>Male</td>
+    <td>Jakarta, 1 January 1990</td>
+    <td>johndoe@example.com</td>
+    <td>08123456789</td>
+    <td>0211234567</td>
+    <td>Regular</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Jane Smith</td>
+    <td>KTP(6543210987654321)</td>
+    <td>Female</td>
+    <td>Bandung, 15 March 1992</td>
+    <td>janesmith@example.com</td>
+    <td>08234567890</td>
+    <td>0223456789</td>
+    <td>Regular</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Alice Johnson</td>
+    <td>KTP(1122334455667788)</td>
+    <td>Female</td>
+    <td>Surabaya, 25 December 1985</td>
+    <td>alicejohnson@example.com</td>
+    <td>08345678901</td>
+    <td>0234567890</td>
+    <td>VIP</td>
+  </tr>
+</table>
+```
 ### Penggunaan:
 Jalankan program ini di lingkungan Python (seperti Termux). Jika modul yang diperlukan belum diinstal, program akan secara otomatis menanganinya. Data dari file `.xls` akan di-gabungkan menjadi satu file JSON yang dapat digunakan untuk kebutuhan lain.
