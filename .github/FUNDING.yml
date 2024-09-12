@@ -1,4 +1,3 @@
-github:
-  sponsors:
-    - url: https://s.id/sendgifto
-      description: Sponsor this project
+custom:
+  - name: Sponsor this project
+    url: https://s.id/sendgifto
