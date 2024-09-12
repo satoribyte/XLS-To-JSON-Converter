@@ -1,1 +1,4 @@
-custom: ['https://s.id/sendgifto']
+github:
+  sponsors:
+    - url: https://s.id/sendgifto
+      description: Sponsor this project
