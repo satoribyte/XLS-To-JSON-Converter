@@ -1,9 +1,3 @@
-<script type='text/javascript' src='https://cdn.trakteer.id/js/embed/trbtn.min.js?date=18-11-2023'></script>
-            <script type='text/javascript'>
-                (function() { var trbtnId = trbtn.init('Dukung Saya di Trakteer', '#be1e2d', 'https://trakteer.id/deni_gentar_candana/tip?open=true', 'https://cdn.trakteer.id/images/embed/trbtn-icon.png?date=18-11-2023', '40');
-                    trbtn.draw(trbtnId); })();
-            </script>
-
 Program ini dirancang untuk membaca file .xls yang berisi tabel HTML, mengekstraksi data dari tabel tersebut, dan kemudian menggabungkan semua data ke dalam satu file JSON. Program ini juga secara otomatis menginstal dependensi yang diperlukan jika belum ada di sistem (seperti BeautifulSoup dan tqdm).
 
 ### Cara Kerja Program:
@@ -156,3 +150,8 @@ Setelah menjalankan program, data dari file .xls akan dikonversi ke format JSON 
 ```
 ### Penggunaan:
 Jalankan program ini di lingkungan Python (seperti Termux). Jika modul yang diperlukan belum diinstal, program akan secara otomatis menanganinya. Data dari file `.xls` akan di-gabungkan menjadi satu file JSON yang dapat digunakan untuk kebutuhan lain.
+
+## Dukung Saya di Trakteer
+
+[![Dukung Saya di Trakteer](https://cdn.trakteer.id/images/embed/trbtn-icon.png?date=18-11-2023)](https://trakteer.id/deni_gentar_candana/tip?open=true)
+
