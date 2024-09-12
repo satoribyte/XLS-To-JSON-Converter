@@ -1,6 +1,8 @@
-## Sponsor this Project
-
-<a href="https://s.id/sendgifto" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: #ffffff; background-color: #007bff; text-align: center; text-decoration: none; border-radius: 5px; border: 1px solid #007bff;">Sponsor this project</a>
+<script type='text/javascript' src='https://cdn.trakteer.id/js/embed/trbtn.min.js?date=18-11-2023'></script>
+            <script type='text/javascript'>
+                (function() { var trbtnId = trbtn.init('Dukung Saya di Trakteer', '#be1e2d', 'https://trakteer.id/deni_gentar_candana/tip?open=true', 'https://cdn.trakteer.id/images/embed/trbtn-icon.png?date=18-11-2023', '40');
+                    trbtn.draw(trbtnId); })();
+            </script>
 
 Program ini dirancang untuk membaca file .xls yang berisi tabel HTML, mengekstraksi data dari tabel tersebut, dan kemudian menggabungkan semua data ke dalam satu file JSON. Program ini juga secara otomatis menginstal dependensi yang diperlukan jika belum ada di sistem (seperti BeautifulSoup dan tqdm).
 
