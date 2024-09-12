@@ -153,5 +153,5 @@ Jalankan program ini di lingkungan Python (seperti Termux). Jika modul yang dipe
 
 ## Dukung Saya di Trakteer
 
-[![Trakteer Button](https://cdn-icons-png.flaticon.com/512/6098/6098529.png))](https://trakteer.id/deni_gentar_candana/tip?open=true)
+[![Trakteer Button](https://cdn-icons-png.flaticon.com/512/6098/6098529.png)](https://trakteer.id/deni_gentar_candana/tip?open=true)
 
